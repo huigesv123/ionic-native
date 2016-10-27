@@ -105,6 +105,12 @@ import { VideoPlayer } from './plugins/video-player';
 import { WebIntent } from './plugins/webintent';
 import { YoutubeVideoPlayer } from './plugins/youtube-video-player';
 import { Zip } from './plugins/zip';
+import { SSLSocket } from './plugins/ssl-socket';
+import { CordovaHttp } from './plugins/cordova-http';
+import { JPush } from './plugins/j-push';
+import { EasyLink } from './plugins/easy-link';
+import { YouMeng } from './plugins/you-meng';
+import { Deploy } from './plugins/deploy';
 export * from './plugins/3dtouch';
 export * from './plugins/background-geolocation';
 export * from './plugins/backgroundmode';
@@ -122,6 +128,7 @@ export * from './plugins/facebook';
 export * from './plugins/file';
 export * from './plugins/filetransfer';
 export * from './plugins/geolocation';
+export * from './plugins/globalization';
 export * from './plugins/googlemaps';
 export * from './plugins/httpd';
 export * from './plugins/ibeacon';
@@ -209,7 +216,14 @@ TextToSpeech,
 Vibration,
 WebIntent,
 YoutubeVideoPlayer,
-Zip
+Zip,
+
+SSLSocket,
+CordovaHttp,
+JPush,
+EasyLink,
+YouMeng,
+Deploy
 }
 
 export * from './plugins/plugin';
@@ -315,7 +329,13 @@ window['IonicNative'] = {
   Vibration,
   WebIntent,
   YoutubeVideoPlayer,
-  Zip
+  Zip,
+  SSLSocket,
+  CordovaHttp,
+  JPush,
+  EasyLink,
+  YouMeng,
+  Deploy
 };
 
 initAngular1(window['IonicNative']);
